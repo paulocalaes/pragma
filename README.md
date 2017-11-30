@@ -1,5 +1,20 @@
 # PragmaBrewery
 
+- What are the highlights of your logic/code writing style?
+A real-time monitoring screen has been developed where the driver can visualize the temperature of each container and receive an audible warning if any of them leave the specified range.
+
+- What could have been done in a better way? What would you do in version
+2.0?
+The interface can be improved in terms of design.
+
+- What were the questions you would ask and your own answers/assumptions?
+Is the registration of beers and temperatures made in another system?
+Yes, I think there is another team with this responsibility and a service was used to consume this data.
+
+- Any other notes you feel relevant for the evaluation of your solution.
+No
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.7.
 
 ## Development server
