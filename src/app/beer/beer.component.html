@@ -1,0 +1,25 @@
+
+<div class="panel panel-{{analyzeTemperature()}}">
+	<div class="panel-heading"><span class="glyphicon glyphicon-{{analyzeTemperatureIcon()}}"></span> <b>{{container.beer}}</b></div>
+	<div class="panel-body">
+		<audio *ngIf="analyzeTemperatureAudio()" src="./assets/alarm.mp3" autoplay></audio>
+		<div class="row">
+	   	<div class="col-md-2 text-center ">Min: {{container.minTemperature}} C</div>
+		<div *ngIf="container.nowTemperature!=-1000" class="col-md-8 text-center">
+    		<div class="de">
+		        <div class="den {{analyzeTemperature()}}">
+	    		     <div class="dene">
+	            		<div class="denem">
+	              			<div class="deneme">
+	                			{{container.nowTemperature}}<span> </span><strong>&deg;</strong>
+	              			</div>
+	            		</div>
+	          		</div>
+	        	</div>
+	    	</div>
+		</div>
+		<div *ngIf="container.nowTemperature==-1000" class="col-md-8 text-center big">Comunication error</div>
+	   	<div class="col-md-2 text-center">Max: {{container.maxTemperature}} C</div>
+		</div>
+	</div>
+</div>
